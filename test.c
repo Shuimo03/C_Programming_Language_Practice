@@ -1,10 +1,9 @@
 #include<stdio.h>
 int main(){
-    printf("test\n");
-    int a = 1;
-    for (int i = 0; i < 9; i++){
-        a++;
-    }
-    printf("%d\n", a);
+    int cm = 0;
+    scanf("%d", &cm);
+    int foot = cm / 30.48;
+    int inch = ((cm / 30.48) - foot) * 12;
+    printf("%d\n", inch);
     return 0;
 }
