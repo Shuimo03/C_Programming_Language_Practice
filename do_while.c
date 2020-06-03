@@ -1,0 +1,13 @@
+#include<stdio.h>
+
+int main(){
+
+    int i = 0;
+    int j = 0;
+    do{
+            j++;
+    }
+    while (i > 10);
+    printf("%d\n", j);
+    return 0;
+}
