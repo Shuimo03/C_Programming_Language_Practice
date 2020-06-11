@@ -2,22 +2,25 @@
 
 int main(){
 
-    int arr[10] = {1,2,2,34,4};
-    int len = sizeof(arr) / sizeof(arr[0]);
-    int *Parr = arr;
-    printf(" len = %d\n", len);
-    printf("arr = %p\n", Parr);
-    for (int i = 0; i < len;i++){
-        printf("arr[%d]  = %p\n", i, &arr[i]);
-    }
+    // int arr[10] = {1,2,2,34,4};
+    // int len = sizeof(arr) / sizeof(arr[0]);
+    // int *Parr = arr;
+    // printf(" len = %d\n", len);
+    // printf("arr = %p\n", Parr);
+    // for (int i = 0; i < len;i++){
+    //     printf("arr[%d]  = %p\n", i, &arr[i]);
+    // }
 
-    int end = 0x000000000061FE04;
-    int front = 0x000000000061FDE0;
-    int first = *arr;
-    printf("%d\n", end);
-    printf("%d\n", front);
-    printf("%d\n", end - front);
-    printf("%d\n", first);
+    // int end = 0x000000000061FE04;
+    // int front = 0x000000000061FDE0;
+    // int first = *arr;
+    // printf("%d\n", end);
+    // printf("%d\n", front);
+    // printf("%d\n", end - front);
+    // printf("%d\n", first);
+
+    int arr[] = {1, 2, 3, 4};
+    int *a = (arr + 0); // arr[0]
     return 0;
 }
 

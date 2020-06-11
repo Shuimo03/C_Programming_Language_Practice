@@ -3,10 +3,13 @@
 int main(){
 
     int *p;
-    int arr[10] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
-    for (p = a; p < (a + 10);p++){
-        printf("%d", *p);
+    int arr[10];
+    p = arr;
+    for (int i = 0; i < 10;i++){
+        scanf("%d", &arr[i]);
     }
-    printf("\n");
-    return 0;
+    for (int i = 0; i < 10; i++, p++){
+        printf("%d = address % p \n ", *p,p);
+    }
+        return 0;
 }
